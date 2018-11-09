@@ -1,0 +1,5 @@
+- id: jinjalint
+  name: Jinjalint
+  description: "A linter which checks the indentation and the correctness of Jinja-like/HTML templates."
+  entry: jinjalint
+  language: python_venv
