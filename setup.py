@@ -21,6 +21,7 @@ setup(
     cmdclass=versioneer.get_cmdclass(),
     description='A linter for Jinja-like templates',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=['jinjalint'],
     include_package_data=True,
     license='MIT',
