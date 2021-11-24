@@ -4,4 +4,4 @@ lint:
 
 .PHONY: test
 test:
-	poetry run python -m jinjalint.test
+	poetry run pytest tests
