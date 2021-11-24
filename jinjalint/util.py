@@ -1,13 +1,13 @@
 import collections
 
 
-def flatten(l):
+def flatten(iterable):
     """
     Deeply flattens an iterable.
     """
-    for el in l:
-        if (isinstance(el, collections.Iterable) and
-                not isinstance(el, (str, bytes))):
-            yield from flatten(el)
+    for element in iterable:
+        if (isinstance(element, collections.Iterable) and
+                not isinstance(element, (str, bytes))):
+            yield from flatten(element)
         else:
-            yield el
+            yield element
