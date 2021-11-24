@@ -10,7 +10,7 @@ with (here / 'README.md').open('r') as f:
 
 with open('requirements.txt') as f:
     lines = f.read().split('\n')
-    install_requires = [line.split()[0] for line in lines if line]
+    install_requires = [line.split()[0].replace("==", ">=") for line in lines if line]
 
 setup(
     name='jinjalint',
