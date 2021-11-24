@@ -7,12 +7,13 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-parsy = "1.1.0"
-attrs = "17.2.0"
-docopt = "0.6.2"
+parsy = "^1.4.0"
+attrs = "^21.2.0"
+docopt = "^0.6.2"
 
 [tool.poetry.dev-dependencies]
 pycodestyle = "^2.8.0"
+pytest = "^6.2.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

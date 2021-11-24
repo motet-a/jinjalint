@@ -1,14 +1,14 @@
 import parsy as P
 
-from .parse import (
+
+from jinjalint.parse import (
     tag_name, tag_name_char, comment, jinja_comment,
     make_attribute_value_parser, make_attribute_parser,
     make_attributes_parser,
     make_closing_tag_parser, make_opening_tag_parser, make_parser,
 )
-
-from . import ast
-from .ast import Location
+from jinjalint import ast
+from jinjalint.ast import Location
 
 
 parser = make_parser()
@@ -421,22 +421,3 @@ def test_optional_container():
 def test_whole_document():
     src = '<html lang="fr"><body>Hello<br></body></html>'
     assert src == str(element.parse(src))
-
-
-def test():
-    test_dummy_location()
-    test_tag_name()
-    test_attribute_value()
-    test_attribute()
-    test_comment()
-    test_jinja_comment()
-    test_opening_tag()
-    test_closing_tag()
-    test_raw_text_elements()
-    test_element()
-    test_self_closing_elements()
-    test_jinja_blocks()
-    test_jinja_whitespace_controls()
-    test_doctype()
-    test_attrs()
-    test_optional_container()

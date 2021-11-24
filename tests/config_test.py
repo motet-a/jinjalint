@@ -1,9 +1,9 @@
 import tempfile
 
-from .config import parse_config
+from jinjalint.config import parse_config
 
 
-def test():
+def test_parse_config():
     with tempfile.NamedTemporaryFile() as f:
         f.write(b'hello = "worl" + "d"\n')
         f.seek(0)

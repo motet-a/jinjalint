@@ -1,7 +1,7 @@
-from .util import flatten
+from jinjalint.util import flatten
 
 
-def test():
+def test_flatten():
     assert list(flatten(())) == []
     assert list(flatten([])) == []
     assert list(flatten((1,))) == [1]
