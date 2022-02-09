@@ -1,5 +1,10 @@
 import collections
 
+try:
+    collections = collections.abc
+except AttributeError:
+    collections = collections
+
 
 def flatten(l):
     """
