@@ -1,9 +1,5 @@
-import collections
-
-try:
-    collections = collections.abc
-except AttributeError:
-    collections = collections
+import collections.abc
+collections = collections.abc
 
 
 def flatten(l):
